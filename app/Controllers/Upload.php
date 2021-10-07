@@ -17,8 +17,8 @@ class Upload extends BaseController
     protected $userModel;
     protected $categModel;
 
-    private   $URL_BASE = 'https://homerental.hobbbies.id/';
-    private   $PATH = '/home/hobbbies/homerental.hobbbies.id/upload/'; // echo getcwd() php script
+    private   $URL_BASE = 'https://homerental.fboys.app/';
+    private   $PATH = '/home/u439050121/domains/fboys.app/public_html/homerental/upload/'; // echo getcwd() php script
     private   $TOPIC_FCM = '/topics/homerentaltopic';
 
     public function __construct()

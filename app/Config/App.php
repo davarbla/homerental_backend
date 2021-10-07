@@ -23,7 +23,7 @@ class App extends BaseConfig
 	 *
 	 * @var string
 	 */
-	public $baseURL = 'https://homerental.hobbbies.id/';
+	public $baseURL = 'https://homerental.fboys.app/';
 
 	/**
 	 * --------------------------------------------------------------------------
@@ -108,7 +108,7 @@ class App extends BaseConfig
 	 *
 	 * @var string
 	 */
-	public $appTimezone = 'Asia/Jakarta';
+	public $appTimezone = 'Europe/Paris';
 
 	/**
 	 * --------------------------------------------------------------------------

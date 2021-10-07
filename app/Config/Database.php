@@ -33,9 +33,9 @@ class Database extends Config
 	public $default = [
 		'DSN'      => '',
 		'hostname' => 'localhost',
-		'username' => 'hobbbies_rental', 
-		'password' => 'g6Kdd%%V;K?C', 
-		'database' => 'hobbbies_homerental', 
+		'username' => 'u439050121_rentadmin',
+		'password' => 'topSecret2021',
+		'database' => 'u439050121_homerental',
 		'DBDriver' => 'MySQLi',
 		'DBPrefix' => '',
 		'pConnect' => false,

@@ -100,4 +100,32 @@ class User extends BaseController
         die();
     }
 
+    public function push_fcm()
+    {
+        $this->postBody = $this->authModel->authHeader($this->request);
+        
+        $dataPush = $this->userModel->sendFCMMessage($this->postBody['token'], $this->postBody['data']);
+        
+        $arr = $dataPush;
+        if (count($arr) < 1) {
+            $json = array(
+                "result" => $arr,
+                "code" => "201",
+                "message" => "Data not found",
+            );
+        }
+        else {
+            $json = array(
+                "result" => $arr,
+                "code" => "200",
+                "message" => "Success",
+            );
+        }
+
+        //add the header here
+        header('Content-Type: application/json');
+        echo json_encode($json);
+        die();
+    }
+
 }
